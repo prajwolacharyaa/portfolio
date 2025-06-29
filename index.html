@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prajwol Acharya</title>
+  <!-- Font Awesome CDN for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-icons">
+      <a href="#home" title="Home" aria-label="Home"><i class="fas fa-home"></i></a>
+      <a href="#skills" title="Skills" aria-label="Skills"><i class="fas fa-tools"></i></a>
+      <a href="#certificates" title="Certificates" aria-label="Certificates"><i class="fas fa-certificate"></i></a>
+      <a href="#download-cv" title="CV" aria-label="CV"><i class="fas fa-file"></i></a>
+     <a href="#about" title="About" aria-label="About"><i class="fas fa-user-tie"></i></a>
+      <a href="#contact" title="Contact" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+    
+      <a href="#" id="theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-adjust"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Header with Cover Photo -->
+<header class="header" id="home">
+    <div class="cover-photo"></div>
+    <img class="profile-photo" src="profile.jpg" alt="Profile Photo" />
+  </header>
+  
+
+  <!-- Main Presentation -->
+  <section class="main">
+    <h1>Hi, I'm Prajwol, a Cyber Security Enthusiast.</h1>
+    <p>
+     Vice-President at CSA-MMC Dang.||Collage representative at Code for Change Dang.
+      
+    </p>
+    <div class="badges">
+      <div class="badge"><i class="fas fa-user-secret"></i> Ethical Hacking</div>
+      <div class="badge"><i class="fas fa-shield-alt"></i> Cyber Security</div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="skills-title">Skills</div>
+    <div class="skills-list">
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-user-secret"></i></div>
+        <div class="skill-name">Ethical Hacking</div>
+        <div class="skill-desc">
+          Penetration testing, vulnerability assessment, and red teaming.
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar" data-level="60"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+        <div class="skill-name">Network Security</div>
+        <div class="skill-desc">Securing networks, firewalls, IDS/IPS, and VPNs.</div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar" data-level="85"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <div class="skill-name">Programming</div>
+        <div class="skill-desc">Python for scripting.</div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar" data-level="75"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-lock"></i></div>
+        <div class="skill-name">Cryptography</div>
+        <div class="skill-desc">Encryption, decryption, and secure communications.</div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar" data-level="70"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates-section" id="certificates">
+    <div class="certificates-title"> Certificates</div>
+    <div class="certificates-list">
+      <div class="certificate-card">
+        <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+        <div class="certificate-name">CompTIA Security+</div>
+        <div class="certificate-desc">
+          Fundamental cybersecurity certification covering essential security concepts.
+        </div>
+      </div>
+      <div class="certificate-card">
+        <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+        <div class="certificate-name">Certified Ethical Hacker (CEH)</div>
+        <div class="certificate-desc">
+          Advanced certification focusing on ethical hacking and penetration testing techniques.
+        </div>
+      </div>
+      <div class="certificate-card">
+        <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+        <div class="certificate-name">Cisco CCNA</div>
+        <div class="certificate-desc">
+          Networking certification emphasizing network fundamentals and security.
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="download-cv" style="margin-top: 20px;">
+    <h2>Download My CV</h2>
+    <p>You can download my CV by clicking the button below:</p>
+    <a href="1.TOC.pdf" download>
+      <button style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+        Download CV
+      </button>
+    </a>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-title"> About Me</div>
+    <div class="about-content">
+      My name is Prajwol Acharya, and I am currently a BSc. CSIT student at Tribhuvan University.
+       I am passionate about cybersecurity and ethical hacking, and I am actively learning how to protect digital systems from threats.
+        I have hands-on experience using tools like Kali Linux and programming in Python.
+       My goal is to build a strong career in cybersecurity and help make the digital world safer.
+
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-title">Contact Me</div>
+    <form class="contact-form" id="contactForm" autocomplete="off">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </section>
+
+  <div class="toast" id="toast">Thank you! Your message has been sent.</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/prajvala.acarya.760690" target="_blank" title="Facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/prajwol-acharya" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/prazol01" target="_blank" title="X (Twitter)" aria-label="X (Twitter)">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+    <div class="footer-text">&copy; 2025 Prajwol Acharya. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
